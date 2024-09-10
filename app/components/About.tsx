@@ -54,15 +54,13 @@ export default function About() {
 
       <div className="flex flex-col lg:flex-row gap-12 items-center max-w-6xl mx-auto">
         <motion.div variants={itemVariants} className="w-full lg:w-2/3">
-          <p className="text-lg lg:text-xl space-y-6 text-gray-900 leading-relaxed dark:text-gray-200">
-            <motion.span variants={itemVariants} className="block">
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: userData.about.description[0],
-                }}
-              ></p>
-            </motion.span>
-          </p>
+          <motion.p
+            variants={itemVariants}
+            className="text-lg lg:text-xl space-y-6 text-gray-900 leading-relaxed dark:text-gray-200"
+            dangerouslySetInnerHTML={{
+              __html: userData.about.description[0],
+            }}
+          ></motion.p>
         </motion.div>
 
         <motion.div variants={itemVariants} className="lg:w-1/3">
@@ -72,8 +70,8 @@ export default function About() {
               src={"/Profile.png"}
               alt="Profile Picture"
               className="relative z-10 rounded-full"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               priority
             />
           </div>

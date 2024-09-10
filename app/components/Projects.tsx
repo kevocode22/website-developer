@@ -100,16 +100,20 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           })}
         </div>
         <div className="flex items-center justify-center w-full z-50">
-          <LinkPreview url={project.link} className="z-50">
-            <Link href={project.link} target="_blank">
-              <Image
-                src={project.imgUrl}
-                alt={project.title}
-                width={300}
-                height={300}
-                className="rounded-sm object-contain"
-              />
-            </Link>
+          <LinkPreview
+            url={project.link}
+            width={300}
+            height={300}
+            className="z-50"
+          >
+            <Image
+              src={project.imgUrl}
+              alt={project.title}
+              width={300}
+              height={300}
+              style={{ width: "auto", height: "auto" }}
+              className="rounded-sm object-contain"
+            />
           </LinkPreview>
         </div>
         <Meteors number={20} />
