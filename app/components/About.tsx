@@ -43,7 +43,7 @@ export default function About() {
       initial="hidden"
       animate={controls}
       variants={containerVariants}
-      className="flex flex-col items-center justify-center py-20 px-6"
+      className="flex flex-col items-center justify-center py-20 px-7"
     >
       <motion.h3
         variants={itemVariants}
