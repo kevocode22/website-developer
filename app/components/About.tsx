@@ -90,7 +90,7 @@ export default function About() {
               />
             </svg>
             <p className="font-sans text-md underline decoration-sky-700 decoration-2 -rotate-6">
-              That's me
+              {"That's me"}
             </p>
           </div>
         </motion.div>
