@@ -27,7 +27,7 @@ export default function Hero() {
   return (
     <AuroraBackground className="w-full flex justify-center items-center flex-col h-screen">
       <motion.div ref={scope}>
-        <h3 className="text-4xl  text-nowrap sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400 py-8 px-3 dark:(from-neutral-100 text-center)">
+        <h3 className="text-4xl text-nowrap sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 py-8 px-3">
           Software Developer
         </h3>
       </motion.div>
